@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
+/*box module*/
 * {
     box-sizing: border-box;
 }
@@ -116,6 +116,7 @@ nav ul li a:hover{
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .button:hover {
@@ -123,11 +124,28 @@ nav ul li a:hover{
     font-family: "Dancing Script";
 }
 
-/*game box stuff*/
+/*game box stuff from grok*/
 .fa {
   font-size: 20px;
   width:30px;
   padding: 10px;
   height: 30px;;
   background-color: rgba(208, 208, 208, 0.895);
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .content {
+        grid-template-columns: 1fr;
+    }
+    /*change navigation menu or smth*/
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
