@@ -19,29 +19,71 @@
     </nav>
     <section class="content">
       
-      <h2 class="h">Our Products</h2>
+      <h2 class="h">To Investigate the html and css structure: check <a href="about.html">About</a> </h2>
       
       <div class="product" >
         <div class="productinfo">
           <div class="description">
-            <h3>Personal Information</h3>
-            <p>What about this individual is special and define how he is. Want to buy his information?</p>
+            <h3>An HTML file linked to an external CSS file.</h3>
+            <p> link rel="stylesheet" href="style.css"</p>
+            <h3>Checkpoint</h3>
+            <p style="font-weight: bold">1. What is CSS used for?</p>
+            <p>
+              CSS is used for styling website, make it prettier, control the visual appearance, layout, and formatting of web pages.
+            </p>
+            <p style="font-weight: bold">2. What is the difference between inline, internal and external CSS?.</p>
+            <span>Inline CSS is added directly inside a single HTML tag using the style attribute and only affects that one element. Internal CSS is written inside \style\ tags in the \head\ section to style a single webpage. External CSS is kept in a separate .css file linked via a \link\ tag, allowing one stylesheet to control the look of an entire multi-page website.
+            </span>
+            <p style="font-weight: bold">3. What are the four parts of the CSS box model?</p>
+            <p>
+              I. Content: The innermost area where your actual text, images, or other media appear. Its dimensions are controlled by properties like width and height.</p>
+               <p>II. Padding: The transparent space directly surrounding the content, pushing the border outward. Background colors and background images extend into the padding area.</p>2
+              <p>III. Border: The line or frame that wraps around both the padding and the content. You can customize its thickness, style (such as solid or dashed), and color.</p>
+             <p>IV. Margin: The outermost transparent layer that creates empty space between the element's border and neighboring elements on the page.</p>
+            
           </div>
-          <p class="price">$40</p>
-       <a href="dogsunglass.html" class="button">Buy</a>
         </div>
       </div>
   
       <div class="product" >
+        <h3>Wide viewport</h3>
+        <img src="https://github.com/thienhua536/myPortfolio/blob/main/Screenshot%20(33).png?raw=true" alt="big">
+        <h3>Narrow viewport</h3>
+        <img src="https://github.com/thienhua536/myPortfolio/blob/main/Screenshot%20(34).png?raw=true" alt="narrow">
+
         <div class="productinfo">
           <div class="description">
-            <h3>Personal Interest</h3>
-            <p>We have set up camera to track down what he usally in meantime, wanna make this guy life less fun? Buy his interests!</p>
+            <p>
+              the @media has set to max-width: 650px (normal phone size) at the bottom of my stylesheet to target screens 650 pixels or narrower.
+            </p>
+            <p>
+              When the viewport become smaller pass this breakpoint, the .content grid will change from 3 columns to 1 column, the navigation list switches to flex-direction: columns, and the heading font size scales down so the content be readable withou scrolling horizontally
+            </p>
           </div>
-          <p class="price">$120</p>
-          <a href="Interest.html" class="button">Buy</a>
         </div>
-      </div>
+        </div>
+        <div class="product" >
+        <div class="productinfo">
+          <div class="description">
+            <p style="font-weight: bold">4. What is a media query?</p>
+            <P>A media query is a CSS technique or command that aookues styles only when the device or browser meet the condication of width and height (orientaion)
+            </P>
+            <p>
+              Media queries (@media) ar the foundation of RESPONSIVE WEB DESIGN, allowing the website to adapt its layout and appearnce across any devive.
+            </p>
+
+            <p style="font-weight: bold">5. Why is responsive design important?</p>
+            <P>
+              Because it ensures a website look good, function properly and provides an optimal user experience across ay device or screen size
+            </P>
+             <p style="font-weight: bold">6. Which CSS technique did I use to improve my portfolio?</p>
+             <p>
+              There are many CSS technique I have use in my Profolio, such as :hover to make the object change when it meet the condition, as well as @media in Media queries to adapt my website which different screen width and height.
+              pseudo-class to create interactive color and style changes when a user points at links or buttons,CSS Grid to organize the navigation and project card.
+             </p>
+          </div>
+        </div>
+        </div>
       
     </section>
   </body>
